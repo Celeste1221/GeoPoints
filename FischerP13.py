@@ -1,10 +1,5 @@
-# FischerP13
-# Programmer: Mary Celeste Fischer
-# EMail: mfischer7@cnm.edu
-# Purpose: dealing with databases
-
-import glib #has the GeoPoint class
-import wx
+import glib #for the GeoPoint class
+import wx #for user interface
 
 #opens a file with a list of GeoPoints and reads them into pointslist[]
 def LoadPoints(event):
@@ -15,7 +10,7 @@ def LoadPoints(event):
     sqlCmd = 'SELECT * FROM tblGeopoints'
     curs.execute(sqlCmd)
 
-    #reads in the database
+    #reads in the (file based )data
     rows = curs.fetchall()
 
     #put the fetchall into a list of GeoPoints
@@ -38,7 +33,7 @@ def LoadPoints(event):
                         + str(closest.GetPoint()) + '.')
         
 ##########################################################################################################
-#create the app and the frame       
+#create the GUI       
 app = wx.App()
 win = wx.Frame(None, title = "GeoPoints App",
                size = (410,350))
