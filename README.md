@@ -4,9 +4,11 @@ This program compares a user's location with a database of nearby locations and 
 ## Installation
 ```bash
 pip install -U wxpython
+```
 
 ## Usage
 ```python
 import glib
 import wx
 import sqlite3
+```
