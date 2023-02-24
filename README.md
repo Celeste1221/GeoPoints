@@ -1,5 +1,11 @@
-# GeoPoints
-A python program using wx, a library, and a database.
+## GeoPoints
+This program compares a user's location with a database of nearby locations and lets the user know which one they are closest to. It incorporates the wx library and the sqlite3 database management system to get the locations' latitude and longitude.
 
-Compares a user's location with a database of various other locations and lets the user know which point they are closest to. 
-Needs wxPython to run.
+## Installation
+GLib, wx
+
+## Usage
+```python
+import glib
+import wx
+import sqlite3
